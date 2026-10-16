@@ -1,0 +1,89 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Tahoma, sans-serif;
+  background: #eef3f8;
+  color: #243447;
+}
+
+header {
+  background: #173d65;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+
+header h1 {
+  margin-bottom: 8px;
+}
+
+main {
+  width: 92%;
+  max-width: 900px;
+  margin: 25px auto;
+}
+
+.panel {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #00000012;
+}
+
+label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #b9c7d6;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 16px;
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 7px;
+  background: #16784a;
+  color: white;
+  cursor: pointer;
+}
+
+#borrowForm button {
+  width: 100%;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  white-space: nowrap;
+}
+
+th {
+  background: #e4edf7;
+}
+
+#message {
+  color: #16784a;
+}

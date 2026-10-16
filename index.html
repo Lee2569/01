@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ระบบยืมหนังสือ</title>
+  <link rel="stylesheet" href="02.css">
+</head>
+<body>
+  <header>
+    <h1>📚 ระบบยืมหนังสือ</h1>
+    <p>ห้องสมุดเทคนิคคอมพิวเตอร์</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>กรอกข้อมูลผู้ยืม</h2>
+      <form id="borrowForm">
+        <label>ชื่อ-นามสกุล</label>
+        <input id="studentName" required placeholder="กรอกชื่อ">
+
+        <label>รหัสนักเรียน</label>
+        <input id="studentId" required placeholder="เช่น 001377">
+
+        <label>รหัสหนังสือ</label>
+        <input id="bookCode" required placeholder="เช่น 32333">
+
+        <button type="submit">บันทึกการยืม</button>
+      </form>
+      <p id="message"></p>
+    </section>
+
+    <section class="panel">
+      <h2>ประวัติการยืม</h2>
+      <button type="button" id="exportBtn">ดาวน์โหลด CSV เปิดใน Excel</button>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ชื่อ</th>
+              <th>รหัสนักเรียน</th>
+              <th>รหัสหนังสือ</th>
+              <th>วันที่ยืม</th>
+              <th>เวลายืม</th>
+            </tr>
+          </thead>
+          <tbody id="borrowList"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="03.js"></script>
+</body>
+</html>
